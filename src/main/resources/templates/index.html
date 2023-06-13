@@ -1,23 +1,36 @@
-<!doctype html>
-<html xmlns>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TextToVoice - WebApp</title>
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Text To Voice Web App</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 <body>
 
-<div>
-    <h1>Text To Voice - WebApp</h1>
 
-    <form>
-        <label>Ingrese el texto:</label>
-        <textarea></textarea>
+
+<nav class="navbar bg-body-tertiary">
+    <div class="container m-auto mt-5 rounded bg-success">
+        <div class="w-100 d-flex p-2 align-items-center justify-content-center" href="#">
+            <img style="background-color: white"  src="tese-logo.svg" alt="Logo" width="75" height="75" class="d-inline-block align-text-top">
+            <h2 class="d-inline mx-5">Text To Voice - Web App</h2>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container ">
+    <form id="submit-text">
+        <label  for="text-input" >Ingrese el texto:</label>
+        <textarea id="text-input"></textarea>
         <button type="submit">Generar Voice</button>
     </form>
 </div>
 
+
+
+<script src="/js/index.js"></script>
 </body>
 </html>
